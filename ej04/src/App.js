@@ -9,7 +9,7 @@ function App() {
 
   let [setsMagic, setSetsMagic] = useState([])
   let [cards, setCards] = useState([])
-  let [select, setSelect] = useState([])
+  let [select, setSelect] = useState("")
 
   useEffect(() => {
     axios.get("https://api.magicthegathering.io/v1/sets").then(
@@ -26,7 +26,7 @@ function App() {
         res => {
 
           let arr = res.data.cards
-          if (arr > 100) arr.slice(0,99)
+          if (arr.length > 100) arr.slice(0,99)
           
           setCards(arr)
           console.log(res)
