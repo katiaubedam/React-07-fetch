@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+}
+
+.card {
+  min-width: 220px;
+  max-width: 220px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px #888;
+  background-color: papayawhip;
+}
+
+.card img {
+  width: 100%;
+  transition: 0.5s
+}
+
+.card img:hover {
+  transform: rotate3d(0, 1, 0.5, 30deg);
+}
+
+input, button {
+  margin: 6px;
+}
+
+.wrapper {
+  max-width: 950px;
+  min-width: 950px;
+  margin: auto;
+  background-color:lightgoldenrodyellow
+}
+
+h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #888;
+  color:indigo;
+  margin: 10px;
+  text-align: center
+}
+
+img.icon {
+  width: 60px;
+}
+
+header {
+  background-color:wheat;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+footer {
+  padding: 20px;
+}
